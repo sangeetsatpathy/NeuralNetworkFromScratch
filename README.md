@@ -1,5 +1,10 @@
 # NeuralNetworkFromScratch
 
+
+<img width="28" height="28" alt="img_c" src="https://github.com/user-attachments/assets/ff301a80-dc03-41f0-844a-4d417ac1b190" />
+<img width="512" height="86" alt="Screenshot 2025-09-28 at 1 21 06 PM" src="https://github.com/user-attachments/assets/ae3c0eb5-a6e0-4448-8f2f-7dabffa91b97" />
+
+
 A fully connected neural network built entirely from scratch (no external neural network libraries) to classify handwritten digits (MNIST). I used `numpy` only for the random initialization of weights, used `ast` to efficiently read my exported weight files, and used `tensorflow` only to access the MNIST dataset pictures. This project displays my understanding of low-level neural network internals — forward propagation, backpropagation, activation functions, batch-normalization, weight updates — and my ability to make it work end-to-end.
 
 Throughout the process, I was debugging errors (both compiler and conceptual errors) in the Neural Network, discovering necessary architectural elements along the way, allowing me to get a deep understanding of the mathematics behind neural nets. 
