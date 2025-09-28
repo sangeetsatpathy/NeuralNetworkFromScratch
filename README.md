@@ -91,6 +91,7 @@ Here is the context behind each run:
   * Run 5: Removed the activation function and batch normalization in last layer; Sigmoid, LR = 0.001
   * Run 6: ReLU, LR = 0.001
   * Run 7: TanH, LR = 0.001
+
 <br> NOTE: in all of my tests, I used a random seed to ensure that results were comparable. This means that all of the random initialization weights were kept the same across runs.
 
 
