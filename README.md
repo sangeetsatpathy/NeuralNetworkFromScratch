@@ -30,3 +30,9 @@ NeuralNetworkFromScratch/<br>
 ├── run-inference.py # Script to use trained weights for prediction / evaluation <br>
 ├── relu-weights.txt # Example dumped weights from a run (ReLU activation) <br>
 ├── tanh-weights.txt # Example dumped weights from a run (Tanh activation) <br>
+
+
+## How to Use
+To run inference on a specific image, using pre-trained weights: run `python run-inference.py` (with all required dependencies installed). 
+You will be prompted to enter the path for the image and the pre-trained weight files. Note that these weight files must be generated from my `neural_net.py` script, as it is in a specific format. You will also be prompted to enter an activation function and a learning rate (as seen below).
+<img width="522" height="87" alt="Screenshot 2025-09-27 at 7 48 23 PM" src="https://github.com/user-attachments/assets/d1084703-6ce5-4e71-ac91-08900034ef86" />
