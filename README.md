@@ -79,3 +79,16 @@ This is the heart of the project. Key components:
   - Metrics (accuracy)  
 
 **Skills shown**: Fundamental ML/NN internals, calculus in code, algorithmic thinking, careful numerical implementation.
+
+
+## Test Results
+
+<img width="550" height="341" alt="(A) Test Accuracies Across Learning Rates" src="https://github.com/user-attachments/assets/177de977-44db-4073-9f87-3ce206a36ea0" />
+
+<img width="600" height="371" alt="(B) Test Accuracy with Gradient Clipping" src="https://github.com/user-attachments/assets/4a9b745c-71ba-480f-b03b-b5ace9fc871a" />
+
+<img width="661" height="371" alt="(C) Impact of Last-Layer Activation (LLA) on Accuracy (LR=0 001)" src="https://github.com/user-attachments/assets/83acd6fe-8fef-4020-b776-383da3ce17b8" />
+
+<img width="600" height="371" alt="(D) Test Accuracies across Activation Functions (LR=1e-3)" src="https://github.com/user-attachments/assets/6d4711d2-d901-44ec-bf02-d969917aa03a" />
+
+<img width="600" height="371" alt="Confidence Scores over Different Runs" src="https://github.com/user-attachments/assets/b12ba8c6-48b2-433f-a3b4-4f52a4669c36" />
