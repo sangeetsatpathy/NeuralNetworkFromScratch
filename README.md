@@ -4,7 +4,8 @@ A fully connected neural network built entirely from scratch (no external neural
 
 Throughout the process, I was debugging errors (both compiler and conceptual errors) in the Neural Network, discovering necessary architectural elements along the way, allowing me to get a deep understanding of the mathematics behind neural nets. 
 
-For example, to solve the vanishing gradient problem inherent in sigmoid activation functions, I learned to use batch normalization -- helping my pre-activation values stabilize. This included figuring out how to implement batch normalization for inference. In debugging why my weights were not effectively "learning" feature recognition, I realized that equal weight initialization was hindering the Neural Net's efficacy. In debugging why my test accuracies were decreasing across epochs, I decreased my learning rate from 0.1 to 0.001. Upon looking into why my prediction probabilities were lacking confidence, I realized that I was feeding last-layer logits into activation functions before softmaxing them, killing Neural Net confidence. With these learnings, along with many more, I was able to finally acquire test accuracies of 83% with only one hidden layer (of size 30)!
+For example, to solve the vanishing gradient problem inherent in sigmoid activation functions, I learned to use batch normalization -- helping my pre-activation values stabilize. This included figuring out how to implement batch normalization for inference. In debugging why my weights were not effectively "learning" feature recognition, I realized that equal weight initialization was hindering the Neural Net's efficacy. After setting up random weight initialization, I realized my pre-activation variances were exploding; so I set up Xavier initialization.
+In debugging why my test accuracies were decreasing across epochs, I decreased my learning rate from 0.1 to 0.001. Upon looking into why my prediction probabilities were lacking confidence, I realized that I was feeding last-layer logits into activation functions before softmaxing them, killing Neural Net confidence. With these learnings, along with many more, I was able to finally acquire test accuracies of 83% with only one hidden layer (of size 30)!
 
 ---
 
@@ -49,8 +50,8 @@ To <b>train the model</b>, run `python train-net.py`. This will prompt you for t
 This is the heart of the project. Key components:
 
 - **Network Initialization**  
-  - Random weight initialization (e.g. small Gaussian or Xavier style)  
-  - Bias initialization  
+  - Random weight initialization (using np.random, Xavier initialization)  
+  - Bias initialization  = 0
   - Configurable layer architecture (input layer, hidden layers, output layer)  
 
 - **Forward Propagation**  
