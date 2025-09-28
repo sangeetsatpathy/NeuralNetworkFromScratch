@@ -41,3 +41,38 @@ You will be prompted to enter the path for the image and the pre-trained weight 
 To <b>train the model</b>, run `python train-net.py`. This will prompt you for the number of epochs, activation function, and learning rate. Then, it will begin training each epoch. At the end of every epoch, it will print out the test accuracy of the model, and output a file with the weights (to be used for inference, if desired). Every batch within an epoch will print out a '|' character to let you know if the training is progressing. Training several epochs will take several hours, depending on your compute power.
 
 <img width="522" height="87" alt="Screenshot 2025-09-27 at 7 58 07 PM" src="https://github.com/user-attachments/assets/d02edfcb-1867-4e78-84cf-ff84f5029c38" />
+
+
+## More details on the internal workings:
+This is the heart of the project. Key components:
+
+- **Network Initialization**  
+  - Random weight initialization (e.g. small Gaussian or Xavier style)  
+  - Bias initialization  
+  - Configurable layer architecture (input layer, hidden layers, output layer)  
+
+- **Forward Propagation**  
+  - Linear combinations ( \( z = W x + b \) )  
+  - Activation functions: ReLU, Tanh, Sigmoid (with corresponding derivatives)  
+  - Softmax or other output activation for multi­class classification  
+
+- **Loss Computation**  
+  - Cross-entropy loss (categorical)  
+  - Handling numerical stability (e.g. log-sum-exp)  
+
+- **Backpropagation / Gradient Computation**  
+  - Derivatives of loss → output layer  
+  - Backpropagate through activation functions and linear layers  
+  - Compute gradients w.r.t weights and biases  
+
+- **Weight Updates / Training Loop**  
+  - Gradient descent (or optionally mini-batch)  
+  - Learning rate scheduling, epoch loops  
+  - Tracking loss over epochs, possibly early stopping  
+
+- **Utilities / Helpers**  
+  - Shuffling training data  
+  - Batch splitting  
+  - Metrics (accuracy)  
+
+**Skills shown**: Fundamental ML/NN internals, calculus in code, algorithmic thinking, careful numerical implementation.
