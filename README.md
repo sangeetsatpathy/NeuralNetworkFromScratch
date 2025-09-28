@@ -1,7 +1,7 @@
 # NeuralNetworkFromScratch
 
 
-<img width="28" height="28" alt="img_c" src="https://github.com/user-attachments/assets/ff301a80-dc03-41f0-844a-4d417ac1b190" />
+<img width="28" height="28" alt="img_c" src="https://github.com/user-attachments/assets/ff301a80-dc03-41f0-844a-4d417ac1b190" /> -->
 <img width="512" height="86" alt="Screenshot 2025-09-28 at 1 21 06 PM" src="https://github.com/user-attachments/assets/ae3c0eb5-a6e0-4448-8f2f-7dabffa91b97" />
 
 
