@@ -91,6 +91,8 @@ Here is the context behind each run:
   * Run 5: Removed the activation function and batch normalization in last layer; Sigmoid, LR = 0.001
   * Run 6: ReLU, LR = 0.001
   * Run 7: TanH, LR = 0.001
+<br> NOTE: in all of my tests, I used a random seed to ensure that results were comparable. This means that all of the random initialization weights were kept the same across runs.
+
 
 This first graph compares Run 1 and Run 2. We see that decreasing the learning rate from 0.1 to 0.01 significantly increased test accuracy. We do see that both learning rates are overfitting (shown by the downward sloping lines). <br>
 <img width="550" height="341" alt="(A) Test Accuracies Across Learning Rates" src="https://github.com/user-attachments/assets/177de977-44db-4073-9f87-3ce206a36ea0" />
