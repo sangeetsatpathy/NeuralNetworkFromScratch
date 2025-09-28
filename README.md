@@ -33,6 +33,11 @@ NeuralNetworkFromScratch/<br>
 
 
 ## How to Use
-To run inference on a specific image, using pre-trained weights: run `python run-inference.py` (with all required dependencies installed). 
-You will be prompted to enter the path for the image and the pre-trained weight files. Note that these weight files must be generated from my `neural_net.py` script, as it is in a specific format. You will also be prompted to enter an activation function and a learning rate (as seen below).
+To <b>run inference</b> on a specific image, using pre-trained weights: run `python run-inference.py` (with all required dependencies installed). 
+You will be prompted to enter the path for the image and the pre-trained weight files. Note that these weight files must be generated from my `neural_net.py` script, as it is in a specific format. You will also be prompted to enter an activation function and a learning rate (as seen below).<br>
 <img width="522" height="87" alt="Screenshot 2025-09-27 at 7 48 23 PM" src="https://github.com/user-attachments/assets/d1084703-6ce5-4e71-ac91-08900034ef86" />
+
+<br>
+To <b>train the model</b>, run `python train-net.py`. This will prompt you for the number of epochs, activation function, and learning rate. Then, it will begin training each epoch. At the end of every epoch, it will print out the test accuracy of the model, and output a file with the weights (to be used for inference, if desired). Every batch within an epoch will print out a '|' character to let you know if the training is progressing. Training several epochs will take several hours, depending on your compute power.
+
+<img width="522" height="87" alt="Screenshot 2025-09-27 at 7 58 07 PM" src="https://github.com/user-attachments/assets/d02edfcb-1867-4e78-84cf-ff84f5029c38" />
